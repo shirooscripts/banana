@@ -10,7 +10,7 @@ getgenv()["Black Screen"] = false
 getgenv()["Auto Leave Infinite"] = {
     ["Auto Leave"] = true,
     ["Method"] = {
-        ["Sell"] = true,
+        ["Sell"] = false,
         ["Leave"] = true,
     },
     ["Wave"] = 31
