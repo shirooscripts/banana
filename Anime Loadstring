@@ -1,0 +1,48 @@
+script_key = "SdSxADrwmvDyPXCMEMJjTYbMqERqhkdR"
+getgenv().ExternalMacro = "link" --Optional
+getgenv().Setting = {
+    Chapter = "FooshaVillage_Chapter1",
+    AutoAllChapter = false,
+    Difficulty = "Normal",
+    AutoStartMap = true,
+    AutoReplay = true,
+    Play = false, -- Must be On To Auto Play Macro
+    AutoClaimQuest = true,
+    AutoReturnLobby=true,
+    BlackScreen = true,
+    AutoReturnLobbyIfAnotherPlayInMatch=false,
+    SpoofName = true,
+    AutoSkipWave=true,
+    AutoLeaveWave = true,
+    AutoSellWave = false,
+    MentionEveryone = false,
+    SelectAutoLeftWave=32,
+    AutoEquipBest = false,
+    MacroPlayMode = "Default", --Default
+    CapFps = true,
+    FpsBoost = false,
+    WebhookUrl = "",
+    ChallengeIgnore = {},
+    ChallengeMacro = {},
+    OneClickNewSetting = { 
+        Enable = true,
+        Feed = true,
+        AllUnitsToGo = {"Electric Cyborg","Beast Sorcerer","Warrior Princess","Admiral Of Lava","Strongest Swordman","Legion Assassin","Jadefire Knight"},
+        SnipeBannerUnits = {"Admiral Of Lava","Strongest Swordsman","Storm Slayer",},
+        TradingSnipe = false,
+        ForceInf = false, --Ignore Level, Unit
+        AnyUnitMythical_Secret = {
+            StartInfinite=true,
+            Feed=true,
+            IgnoreLevel = false
+        },
+        TradingSnipeUnits = {"Electric Cyborg"},
+        MaxGemUnit = 2000,
+        RequiredLevel = 20,
+    },
+}
+
+if getgenv().Loaded  then
+    return 
+end
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/57d5eebd9b111f1639a5970102487168.lua"))()
