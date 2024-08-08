@@ -1,6 +1,6 @@
 repeat task.wait() until game:IsLoaded()
 wait(5) -- Put this for make sure script will execute
-_G.Webhook  = {['https://discord.com/api/webhooks/1249606053147181107/6TYyRVTrkvM8eh3QU2EwJwdyssZdL958tJNJjcAnLMqtnmTe8SgACAbnP9wIXfRbWo_I'] = 'Link', ['SendWebhookReward'] = true} -- Notify when end match
+_G.Webhook  = {['WebhookLink'] = 'https://discord.com/api/webhooks/1249606053147181107/6TYyRVTrkvM8eh3QU2EwJwdyssZdL958tJNJjcAnLMqtnmTe8SgACAbnP9wIXfRbWo_I', ['SendWebhookReward'] = true} -- Notify when end match
 _G.SettingsAD = {
     ["LeaveAtWave"] = 31,
     ["DelayStartLobby"] = 5,
