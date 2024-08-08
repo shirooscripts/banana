@@ -6,7 +6,8 @@ _G.SettingsAD = {
     ["DelayStartLobby"] = 5,
     ["MethodLeave"] = "Sell", -- Sell, Leave,
     ["ReplayInStoryMode"] = false, -- Use when u want to play only story mode ( next time will go to next chapter too when disconnect )
-    ["BlackScreen"] = true
+    ["BlackScreen"] = true,
+    ["EquipBest"] = true
 }
 
 getgenv().Key = "MARU-U4D73-MS5P-7RAV9-M7OI-4ENPN"
