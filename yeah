@@ -1,3 +1,6 @@
+-- Combined Script
+
+-- Script 1
 script_key = "SdSxADrwmvDyPXCMEMJjTYbMqERqhkdR"
 getgenv().ExternalMacro = "link" --Optional
 getgenv().Setting = {
@@ -8,32 +11,32 @@ getgenv().Setting = {
     AutoReplay = true,
     Play = false, -- Must be On To Auto Play Macro
     AutoClaimQuest = true,
-    AutoReturnLobby=true,
+    AutoReturnLobby = true,
     BlackScreen = true,
-    AutoReturnLobbyIfAnotherPlayInMatch=false,
+    AutoReturnLobbyIfAnotherPlayInMatch = false,
     SpoofName = true,
-    AutoSkipWave=true,
+    AutoSkipWave = true,
     AutoLeaveWave = true,
     AutoSellWave = false,
     MentionEveryone = false,
-    SelectAutoLeftWave=32,
+    SelectAutoLeftWave = 32,
     AutoEquipBest = false,
     MacroPlayMode = "Default", --Default
     CapFps = true,
     FpsBoost = false,
-    WebhookUrl = "",
+    WebhookUrl = "https://discord.com/api/webhooks/1249606053147181107/6TYyRVTrkvM8eh3QU2EwJwdyssZdL958tJNJjcAnLMqtnmTe8SgACAbnP9wIXfRbWo_I",
     ChallengeIgnore = {},
     ChallengeMacro = {},
     OneClickNewSetting = { 
         Enable = true,
         Feed = true,
         AllUnitsToGo = {"Electric Cyborg","Beast Sorcerer","Warrior Princess","Admiral Of Lava","Strongest Swordman","Legion Assassin","Jadefire Knight"},
-        SnipeBannerUnits = {"Admiral Of Lava","Strongest Swordsman","Storm Slayer",},
+        SnipeBannerUnits = {"Admiral Of Lava","Strongest Swordsman","Storm Slayer"},
         TradingSnipe = false,
         ForceInf = false, --Ignore Level, Unit
         AnyUnitMythical_Secret = {
-            StartInfinite=true,
-            Feed=true,
+            StartInfinite = true,
+            Feed = true,
             IgnoreLevel = false
         },
         TradingSnipeUnits = {"Electric Cyborg"},
@@ -42,7 +45,10 @@ getgenv().Setting = {
     },
 }
 
-if getgenv().Loaded  then
-    return 
+if not getgenv().Loaded then
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/57d5eebd9b111f1639a5970102487168.lua"))()
 end
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/57d5eebd9b111f1639a5970102487168.lua"))()
+
+-- Script 2
+getgenv().Tracker_ID = "3e2ff2d2-b7f7-4552-89d7-5d734d9d2e67"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/main/ADTracker.lua"))()
