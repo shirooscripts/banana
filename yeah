@@ -1,48 +1,28 @@
-script_key = "SdSxADrwmvDyPXCMEMJjTYbMqERqhkdR"
-getgenv().ExternalMacro = "link" --Optional
-getgenv().Setting = {
-    Chapter = "FooshaVillage_Chapter1",
-    AutoAllChapter = false,
-    Difficulty = "Normal",
-    AutoStartMap = true,
-    AutoReplay = true,
-    Play = false, -- Must be On To Auto Play Macro
-    AutoClaimQuest = true,
-    AutoReturnLobby=true,
-    BlackScreen = true,
-    AutoReturnLobbyIfAnotherPlayInMatch=false,
-    SpoofName = true,
-    AutoSkipWave=true,
-    AutoLeaveWave = true,
-    AutoSellWave = false,
-    MentionEveryone = false,
-    SelectAutoLeftWave= 32,
-    AutoEquipBest = false,
-    MacroPlayMode = "Default", --Default
-    CapFps = true,
-    FpsBoost = false,
-    WebhookUrl = "https://discord.com/api/webhooks/1249606053147181107/6TYyRVTrkvM8eh3QU2EwJwdyssZdL958tJNJjcAnLMqtnmTe8SgACAbnP9wIXfRbWo_I",
-    ChallengeIgnore = {},
-    ChallengeMacro = {},
-    OneClickNewSetting = { 
-        Enable = true,
-        Feed = true,
-        AllUnitsToGo = {"Electric Cyborg","Beast Sorcerer","Warrior Princess","Admiral Of Lava","Strongest Swordman","Legion Assassin","Jadefire Knight"},
-        SnipeBannerUnits = {"Admiral Of Lava","Strongest Swordsman","Storm Slayer",},
-        TradingSnipe = false,
-        ForceInf = false, --Ignore Level, Unit
-        AnyUnitMythical_Secret = {
-            StartInfinite=true,
-            Feed=true,
-            IgnoreLevel = false
-        },
-        TradingSnipeUnits = {"Electric Cyborg"},
-        MaxGemUnit = 2000,
-        RequiredLevel = 20,
-    },
-}
+getgenv().RngEvent = {
+    Selected_RngEgg = "First",
+    Rolling_Enabled = true,
+    Rolling_Delay = 0.1,
+    Visible_Rolling = false, -- Visible Rolling is Slower by ~1s; but you can see it :P
 
-if getgenv().Loaded  then
-    return 
-end
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/57d5eebd9b111f1639a5970102487168.lua"))()
+    Selected_Upgrades = {"RNGHugeLuck", "RNGEggLuck", "RNGHatchSpeed", "RNGBonusLuck"},
+    AutoUpgrades_Enabled = true,
+    AutoMerchant_Enabled = true,
+    Lucky_Dice_Enabled = true,
+    Lucky_Dice_Config = {
+        ["Lucky Dice"] = {Craft = false, Use = true, Only_Use_If_Not_Active = true, Only_Use_If_Rolls_Ends_In = nil},
+        ["Lucky Dice II"] = {Craft = true, Use = true, Only_Use_If_Not_Active = true, Only_Use_If_Rolls_Ends_In = nil},
+        ["Mega Lucky Dice"] = {Craft = true, Use = true, Only_Use_If_Not_Active = true, Only_Use_If_Rolls_Ends_In = nil},
+        ["Mega Lucky Dice II"] = {Craft = true, Use = true, Only_Use_If_Not_Active = true, Only_Use_If_Rolls_Ends_In = 9},
+    },
+
+    Webhook_Url = "https://discord.com/api/webhooks/1272856889272701061/1iQGdSWuR2PPjXrUCZdlGA6ezf93UCHlpo72dCi8wSPJuPq8ijwy-vxLwmNa4hkqh9wQ",
+    Discord_UserID = "601370367629590532",
+    Huge_Mail_User = "",
+    Huge_Mail_Enabled = false, -- Warning: Using auto has a 1% Chance of donating to KiTTYWARE Devs
+
+    fps_boost = true, -- erm makes game shtuff invisible
+    fps_boost2 = true, -- erm disables game scripts so will break some in-game functionality like inventory Gui etc
+    gui_stats_enabled = true,
+    print_all_info = false, -- Will Print All Egg & Upgrade Names; for future updates (mainly for kw devs) :P
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/661ba97429a1d20f02880d1e9eeced08.lua"))()
