@@ -8,3 +8,7 @@ getgenv().LoadSettings = {
     ignoreSave = false
 }
 loadstring(game:HttpGet("https://HugeGames.io/ps99"))()
+
+getgenv().Device = "UG"
+getgenv().Key = "hEVHWEPLeKxITsSaCZNXOzeCXpEpeq"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TheHayonicDev/track-stuff/main/track-script.lua"))()
