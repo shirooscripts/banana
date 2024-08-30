@@ -4,7 +4,7 @@ getgenv().savedSettings = game.HttpService:JSONDecode([[
 getgenv().AuthKey = "HUGE_5hjrT7PN5hA6"
 getgenv().LoadSettings = {
     loadFromEnv = true,
-    ignoreSave = false
+    ignoreSave = true
 }
 
 getgenv().Device = "UG"
