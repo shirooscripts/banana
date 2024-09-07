@@ -6,7 +6,6 @@ end
 
 getgenv().Key = "dfddac81288f5d9c42af64bf"
 getgenv().TargetUnitRoll = {
-    "Admiral Of Lava",
     "Bloomer"
 }
 getgenv().notRollUnitTarget = false
