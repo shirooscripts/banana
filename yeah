@@ -14,7 +14,7 @@ getgenv().Speed = {
     ["Speed"] = 2,
     ["Wave Active Speed"] = 1,
 }
-getgenv()["Black Screen"] = false,
+getgenv()["Black Screen"] = false
 getgenv()["Auto Leave Infinite"] = {
     ["Auto Leave"] = true,
     ["Method"] = {
