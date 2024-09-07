@@ -28,11 +28,11 @@ getgenv()["Auto Leave Infinite"] = {
     ["Wave"] = 31
 }
 getgenv().Auto_Equip = {
-    ["Equip Best"] = true,
+    ["Equip Best"] = false,
     ["Custom Equip"] = {
-        ["Enabled"] = false,
+        ["Enabled"] = true,
         ["Units"] = {
-            "Chief Of Lava",
+            "Chief Of Lava", "Electric Cyborg"
         },
     },
 }
