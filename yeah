@@ -9,7 +9,6 @@ getgenv().TargetUnitRoll = {
     "Admiral Of Lava",
     "Bloomer"
 }
-
 getgenv().notRollUnitTarget = false
 getgenv().UseSavePosition = {
     ["Enabled"] = false,
@@ -61,4 +60,8 @@ getgenv().Webhook =  {
     ["Roll Unit"] = true,
     ["Story/Infinite"] = true,
 }
+
+getgenv().Tracker_ID = "3e2ff2d2-b7f7-4552-89d7-5d734d9d2e67"
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-KaitunAD.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/buang5516/buanghub/main/ADTracker.lua"))()
