@@ -1,4 +1,9 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+
+for _, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
+    pcall(function() v:Destroy() end)
+end
+
 getgenv().Key = "dfddac81288f5d9c42af64bf"
 getgenv().TargetUnitRoll = {
     "Admiral Of Lava",
