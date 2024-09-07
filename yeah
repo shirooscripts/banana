@@ -32,7 +32,7 @@ getgenv().Auto_Equip = {
     ["Custom Equip"] = {
         ["Enabled"] = true,
         ["Units"] = {
-            "Chief Of Lava", "Electric Cyborg"
+            "Chief Of Lava", "Electric Cyborg", "Legion Assassin"
         },
     },
 }
