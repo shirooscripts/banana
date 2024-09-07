@@ -38,7 +38,7 @@ getgenv().Auto_Equip = {
     },
 }
 getgenv().Portal = {
-    ["Enabled"] = true, 
+    ["Enabled"] = false, 
     ["Name Portal"] = "Demon Portal", -- support only 4 portal lunar and Demon and Ancient Dragon and Cursed Kingdom
     ["Auto Get Portal"] = true, ---- support only portal Ancient Dragon and Cursed Kingdom
     ["Rarity Portal"] = {
