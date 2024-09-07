@@ -28,7 +28,7 @@ getgenv().Auto_Equip = {
     ["Custom Equip"] = {
         ["Enabled"] = true,
         ["Units"] = {
-            "Admiral Of Lava", "Electric Cyborg", "Legion Assassin",
+            "Admiral Of Lava", "Electric Cyborg", "Legion Assassin", "Legion Captain", "Muscular Sorcerer", "Legion Commander", "Demon Knight",
         },
     },
 }
@@ -45,7 +45,7 @@ getgenv().Portal = {
     ["Unit"] = {
         ["Use All Unit"] = true,
         ["Custom Unit"] = {
-            "Admiral Of Lava",
+            "Admiral Of Lava", "Electric Cyborg", "Legion Assassin", "Legion Captain", "Muscular Sorcerer", "Legion Commander", "Demon Knight",
         }
     },
 }
