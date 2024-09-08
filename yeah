@@ -28,7 +28,13 @@ getgenv().Auto_Equip = {
     ["Custom Equip"] = {
         ["Enabled"] = true,
         ["Units"] = {
-            "Demon Knight", "Legion Commander", "Legion Captain", "Admiral Of Lava", "Electric Cyborg", "Legion Assassin", "Muscular Sorcerer",  
+            "Demon Knight",
+            "Legion Commander",
+            "Legion Captain",
+            "Admiral Of Lava",
+            "Electric Cyborg",
+            "Legion Assassin",
+            "Muscular Sorcerer"
         },
     },
 }
@@ -43,9 +49,15 @@ getgenv().Portal = {
         ["Mythical"] = false,
     },
     ["Unit"] = {
-        ["Use All Unit"] = true,
+        ["Use All Unit"] = false,
         ["Custom Unit"] = {
-            "Demon Knight", "Legion Commander", "Legion Captain", "Admiral Of Lava", "Electric Cyborg", "Legion Assassin", "Muscular Sorcerer", 
+            "Demon Knight",
+            "Legion Commander",
+            "Legion Captain",
+            "Admiral Of Lava",
+            "Electric Cyborg",
+            "Legion Assassin",
+            "Muscular Sorcerer" 
         }
     },
 }
