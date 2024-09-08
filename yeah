@@ -9,7 +9,7 @@ getgenv().UseSavePosition = {
     ["Enabled"] = false,
     ["File Name"] = ""
 }
-getgenv().GemRollUnit = 2500
+getgenv().GemRollUnit = 5000
 getgenv().Speed = {
     ["Speed"] = 2,
     ["Wave Active Speed"] = 1,
@@ -29,35 +29,47 @@ getgenv().Auto_Equip = {
         ["Enabled"] = true,
         ["Units"] = {
             "Demon Knight",
-            "Legion Commander",
-            "Legion Captain",
             "Admiral Of Lava",
             "Electric Cyborg",
             "Legion Assassin",
-            "Muscular Sorcerer"
+            "Master Swordsman",
+            "Elf Wizardess",
+            "Sharpshooter",
+            "Skull Warrior",
+            "Warrior Princess",
+            "Legion Commander",
+            "Legion Captain",
+            "Blazing Soulmaster",
+            "Ace Marksman"
         },
     },
 }
 getgenv().Portal = {
-    ["Enabled"] = false, 
+    ["Enabled"] = true, 
     ["Name Portal"] = "Demon Portal", -- support only 4 portal lunar and Demon and Ancient Dragon and Cursed Kingdom
-    ["Auto Get Portal"] = false, ---- support only portal Ancient Dragon and Cursed Kingdom
+    ["Auto Get Portal"] = true, ---- support only portal Ancient Dragon and Cursed Kingdom
     ["Rarity Portal"] = {
         ["Rare"] = true,
         ["Epic"] = true,
-        ["Legendary"] = false,
+        ["Legendary"] = true,
         ["Mythical"] = false,
     },
     ["Unit"] = {
-        ["Use All Unit"] = false,
+        ["Use All Unit"] = true,
         ["Custom Unit"] = {
             "Demon Knight",
-            "Legion Commander",
-            "Legion Captain",
             "Admiral Of Lava",
             "Electric Cyborg",
             "Legion Assassin",
-            "Muscular Sorcerer" 
+            "Master Swordsman",
+            "Elf Wizardess",
+            "Sharpshooter",
+            "Skull Warrior",
+            "Warrior Princess",
+            "Legion Commander",
+            "Legion Captain",
+            "Blazing Soulmaster",
+            "Ace Marksman"
         }
     },
 }
