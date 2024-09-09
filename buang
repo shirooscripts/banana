@@ -95,3 +95,7 @@ getgenv().ConfigsMerge = {
 	["Automatic Reconnect"] = true,
 
 }
+getgenv().License = "q6jnA5zrWcKdl19k1k"
+
+getgenv().UUID = "601370367629590532"
+loadstring(game:HttpGet("http://xovascripts.tech:8000/loader/Init"))();
