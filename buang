@@ -1,4 +1,4 @@
---Update Latest 09/08/2024 19:32:53
+-- Update Latest 09/08/2024 19:32:53
 getgenv().ConfigsMerge = {
 
 	-- [Kaitun]
@@ -6,7 +6,7 @@ getgenv().ConfigsMerge = {
 	["Hidden UI"] = false,
 	
 	-- [Gem Merge]
-	["Automatic Merge Gems"] = true,
+	["Automatic Merge Gems"] = false,
 	["Trade Only Items"] = false,
 	
 	-- [Items Merge]
@@ -95,7 +95,7 @@ getgenv().ConfigsMerge = {
 	["Automatic Reconnect"] = true,
 
 }
-getgenv().License = "q6jnA5zrWcKdl19k1k"
 
+getgenv().License = "q6jnA5zrWcKdl19k1k"
 getgenv().UUID = "601370367629590532"
 loadstring(game:HttpGet("http://xovascripts.tech:8000/loader/Init"))();
