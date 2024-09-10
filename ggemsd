@@ -1,0 +1,74 @@
+local player = game.Players.LocalPlayer
+
+-- Main account and their corresponding sub-accounts
+local accounts = {
+    ["RavenMalgapo20"] = {"held0104", "AsmopheI", "unicorn_wolfsrudel", "HockyMaster56"},
+    ["Azizboss57890"] = {"TestingAccountAnnie1", "cindy100nice", "BeastLegendJulian", "DqzB77GiiYA0345Bk"},
+    ["Saturnel"] = {"eCpk1p1Fk2PJ2OAtL", "mX04J3XK2JX78mQGR", "DivineMerw", "Rundilakoo"},
+    ["harry_robloxgamer"] = {"EmeriSokit", "REDHeRTaz", "boy10301", "Dopaye"},
+    ["bestonioftheworld"] = {"alemy_24", "xbxx12", "PanotKal", "roblox200and5"},
+    ["raecampo"] = {"ance14", "KBELLACUTE54321", "shiroofruit905", "shiroofruit065"},
+    ["FlameDynast"] = {"shiroofruit961", "shiroofruit679", "shiroofruit017", "shiroofruit202"},
+    ["ShinyChe"] = {"shiroofruit355", "shiroofruit592", "camOnGam", "Prolol3000"},
+    ["Meerchan"] = {"notshiroo81090", "notshiroo75", "notshiroo39", "shiroofruit417"},
+    ["nexer555"] = {"freshking378", "erwrf", "shiroofruit619", "shiroofruit617"}
+}
+
+-- Function to check if the player is a main or sub-account
+local function getAccountType(playerName)
+    for mainAccount, subAccounts in pairs(accounts) do
+        if playerName == mainAccount then
+            return "main", mainAccount
+        elseif table.find(subAccounts, playerName) then
+            return "sub", mainAccount
+        end
+    end
+    return nil, nil -- If player is neither in main nor sub-accounts list
+end
+
+-- Determine if the player is a main or sub account
+local accountType, associatedMainAccount = getAccountType(player.Name)
+
+-- Script execution based on account type
+if accountType == "main" then
+    -- Main account script
+    script_key = "SdSxADrwmvDyPXCMEMJjTYbMqERqhkdR"
+    getgenv().SelectedPlayer = player.Name -- Main Account name, to which gems will be sent
+    getgenv().MainAccount = true -- Set True if it's the account to receive gems
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Magic Arrow", "Legion Veteran", "Legion Assassin", "Blood Demon", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal", "Risky Dice"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = true,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+
+elseif accountType == "sub" then
+    -- Sub account script
+    script_key = "SdSxADrwmvDyPXCMEMJjTYbMqERqhkdR"
+    getgenv().SelectedPlayer = associatedMainAccount -- Main Account name that the sub-account will send gems to
+    getgenv().MainAccount = false -- Set False because it's a sub account
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Magic Arrow", "Legion Veteran", "Legion Assassin", "Blood Demon", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal", "Risky Dice"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = true,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+else
+    print("Player not recognized as either main or sub account.")
+end
