@@ -2,7 +2,7 @@ local player = game.Players.LocalPlayer
 
 -- Main account and their corresponding sub-accounts
 local accounts = {
-    ["RavenMalgapo20"] = {"held0104", "AsmopheI", "unicorn_wolfsrudel", "HockyMaster56"},
+    ["RavenMalgapo20"] = {"held0104", "Chariot864", "unicorn_wolfsrudel", "HockyMaster56"},
     ["Azizboss57890"] = {"TestingAccountAnnie1", "cindy100nice", "BeastLegendJulian", "DqzB77GiiYA0345Bk"},
     ["Saturnel"] = {"eCpk1p1Fk2PJ2OAtL", "mX04J3XK2JX78mQGR", "DivineMerw", "Rundilakoo"},
     ["harry_robloxgamer"] = {"EmeriSokit", "REDHeRTaz", "boy10301", "Dopaye"},
