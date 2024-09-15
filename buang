@@ -1,5 +1,5 @@
 getgenv().Config = {
-    ["Ignore Shiny Sell Rarity"] = false,
+    ["Ignore Shiny Sell Rarity"] = true,
     ["blackScreen"] = false,
     ["Enable Auto Send Trade"] = false,
     ["Harden Portal Select"] = "",
