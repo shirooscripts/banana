@@ -2,16 +2,21 @@ local player = game.Players.LocalPlayer
 
 -- Main account and their corresponding sub-accounts
 local accounts = {
-    ["RavenMalgapo20"] = {"held0104", "Chariot864", "unicorn_wolfsrudel", "HockyMaster56"},
-    ["Azizboss57890"] = {"TestingAccountAnnie1", "cindy100nice", "BeastLegendJulian", "DqzB77GiiYA0345Bk"},
-    ["Saturnel"] = {"eCpk1p1Fk2PJ2OAtL", "mX04J3XK2JX78mQGR", "DivineMerw", "Rundilakoo"},
-    ["harry_robloxgamer"] = {"EmeriSokit", "REDHeRTaz", "boy10301", "Dopaye"},
-    ["bestonioftheworld"] = {"alemy_24", "xbxx12", "PanotKal", "roblox200and5"},
-    ["raecampo"] = {"ance14", "KBELLACUTE54321", "shiroofruit905", "shiroofruit065"},
-    ["FlameDynast"] = {"shiroofruit961", "shiroofruit679", "shiroofruit017", "shiroofruit202"},
-    ["ShinyChe"] = {"shiroofruit355", "shiroofruit592", "camOnGam", "Prolol3000"},
-    ["Meerchan"] = {"notshiroo81090", "notshiroo75", "notshiroo39", "shiroofruit417"},
-    ["nexer555"] = {"freshking378", "erwrf", "shiroofruit619", "shiroofruit617"}
+    ["RavenMalgapo20"] = {"cindy100nice", "BeastLegendJulian", "DqzB77GiiYA0345Bk", "eCpk1p1Fk2PJ2OAtL"},
+    ["Azizboss57890"] = {"mX04J3XK2JX78mQGR", "DivineMerw", "Rundilakoo", "EmeriSokit"},
+    ["Saturnel"] = {"REDHeRTaz", "boy10301", "Dopaye", "alemy_24"},
+    ["harry_robloxgamer"] = {"xbxx12", "PanotKal", "roblox200and5", "ance14"},
+    ["bestonioftheworld"] = {"KBELLACUTE54321", "shiroofruit905", "shiroofruit065", "shiroofruit961"},
+    ["raecampo"] = {"shiroofruit679", "shiroofruit017", "shiroofruit202", "shiroofruit355"},
+    ["FlameDynast"] = {"shiroofruit592", "camOnGam", "Prolol3000", "notshiroo81090"},
+    ["ShinyChe"] = {"notshiroo75", "notshiroo39", "shiroofruit417", "freshking378"},
+    ["Meerchan"] = {"erwrf", "shiroofruit619", "shiroofruit617", "shiroofruit757"},
+    ["nexer555"] = {"notshirooblox2", "xlolgamerxd", "Naughty_Boyz", "Awesome_Boy38"},
+    ["held0104"] = {"Rossy103491", "notshiroo02", "chief40478", "argie1567"},
+    ["Chariot864"] = {"princessKatie12456", "fgteevfan078544", "tristan10878", "talkilover623"},
+    ["unicorn_wolfsrudel"] = {"dodge329", "orangtue", "Gamers745", "pokemonknower12332"},
+    ["HockyMaster56"] = {"stephencurr1223", "RobloxianBloxyMan", "robloxoi12345", "prosiaj"},
+    ["TestingAccountAnnie1"] = {"skelitor46fan0352", "AdrianoMDM_Gamer", "bionicbro90", "gsmer1"},
 }
 
 -- Function to check if the player is a main or sub-account
